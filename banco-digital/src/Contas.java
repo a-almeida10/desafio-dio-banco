@@ -38,8 +38,8 @@ public void transferir(double valor, Contas contaDestino) {
 public void extrato(){
 
     System.out.println("----------------Extrato da conta----------------");
-    System.out.println("Número da conta: " + this.numero + "  Agência: " + this.agencia  );
-    System.out.println("Titular: " + this.cliente.getNome);
+    System.out.println("Titular: " + this.cliente.getNome());
+    System.out.println("Número da conta: " + String.format("%04d", this.numero) + "  Agência: " + String.format("%03d",this.agencia));
     System.out.println("Seu saldo atual é de R$ " + String.format("%.2f", saldo) + " .");
    
 }

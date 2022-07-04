@@ -10,9 +10,7 @@ public class App {
 
 
     conta1.depositar(123500);
-    conta1.extrato();
     conta2.depositar(25.00);
-    conta2.extrato();
     conta1.transferir(800.00, conta2);
     conta1.extrato();
     conta2.extrato();
